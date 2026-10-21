@@ -1,0 +1,338 @@
+
+@media (min-width: 1400px) {
+  :root {
+    --max-width: 1240px;
+  }
+}
+
+@media (max-width: 1100px) {
+  nav {
+    width: calc(100% - 36px);
+    gap: 16px;
+  }
+
+  nav > div {
+    gap: 16px;
+  }
+
+  nav > a:first-child {
+    font-size: 19px;
+  }
+
+  nav > a:last-child {
+    padding: 10px 14px;
+  }
+
+  main > section {
+    padding: 70px 35px;
+  }
+
+  main > section:first-child {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  #courses > article,
+  #articles > article {
+    width: calc(50% - 12px);
+    margin-right: 12px;
+  }
+
+  #courses > article:nth-of-type(3n),
+  #articles > article:nth-of-type(3n) {
+    margin-right: 12px;
+  }
+
+  #courses > article:nth-of-type(2n),
+  #articles > article:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  nav {
+    min-height: 74px;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  nav > a:first-child {
+    margin-right: auto;
+  }
+
+  nav > div {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    padding: 8px 0;
+  }
+
+  nav > a:last-child {
+    padding: 9px 13px;
+  }
+
+  main > section {
+    padding: 60px 28px;
+  }
+
+  main > section:first-child {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  #home h1 {
+    font-size: clamp(2.4rem, 7vw, 3.7rem);
+  }
+
+  #home > p:not(:first-child) {
+    font-size: 16px;
+  }
+
+  #home > div {
+    margin-top: 30px;
+  }
+
+  #home > div img {
+    max-height: 360px;
+  }
+
+  #subjects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  #subjects > article {
+    padding: 23px;
+  }
+
+  #courses > article,
+  #articles > article {
+    width: calc(50% - 12px);
+  }
+
+  #courses > article > img {
+    height: 190px;
+  }
+
+  #contact form {
+    padding: 25px;
+  }
+
+  footer {
+    padding: 45px 28px 20px;
+  }
+
+  footer > div:not(:first-child):not(:last-of-type) {
+    width: 32%;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  .top-bar {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  nav {
+    width: calc(100% - 32px);
+    min-height: 68px;
+    gap: 10px;
+  }
+
+  nav > a:first-child {
+    font-size: 18px;
+    gap: 7px;
+  }
+
+  nav > a:first-child img {
+    width: 36px;
+  }
+
+  nav > a:last-child {
+    padding: 9px 11px;
+    font-size: 12px;
+  }
+
+  nav > div {
+    gap: 10px 17px;
+  }
+
+  nav > div a {
+    font-size: 13px;
+  }
+
+  main > section {
+    padding: 48px 18px;
+  }
+
+  main > section:first-child {
+    padding: 58px 18px;
+  }
+
+  #home h1 {
+    font-size: clamp(2.2rem, 10vw, 3.2rem);
+    letter-spacing: -1.1px;
+  }
+
+  #home > p:not(:first-child) {
+    font-size: 15px;
+  }
+
+  #home > a {
+    margin-top: 20px;
+    margin-right: 5px;
+    padding: 11px 14px;
+    font-size: 13px;
+  }
+
+  #home > div {
+    margin-top: 25px;
+  }
+
+  #home > div img {
+    min-height: 210px;
+    max-height: 270px;
+    border-radius: 16px;
+  }
+
+  #subjects {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  #subjects > article {
+    padding: 23px;
+  }
+
+  #subjects > p,
+  #courses > p:first-of-type,
+  #articles > p {
+    margin-bottom: 24px;
+  }
+
+  #courses > article,
+  #articles > article {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  #courses > article:nth-of-type(n),
+  #articles > article:nth-of-type(n) {
+    margin-right: 0;
+  }
+
+  #courses > article > img {
+    height: 220px;
+  }
+
+  #courses > article > h3,
+  #courses > article > p,
+  #courses > article > a {
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+
+  #articles > article {
+    padding: 22px;
+  }
+
+  #about > p {
+    font-size: 15px;
+  }
+
+  main > section:nth-of-type(5) h2 {
+    font-size: 2rem;
+  }
+
+  #contact form {
+    padding: 20px;
+  }
+
+  #contact input,
+  #contact textarea {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  #contact button {
+    width: 100%;
+  }
+
+  footer {
+    padding: 38px 20px 18px;
+  }
+
+  footer > div:first-child {
+    margin-bottom: 30px;
+  }
+
+  footer > div:not(:first-child):not(:last-of-type) {
+    width: 48%;
+    margin-bottom: 25px;
+  }
+
+  footer > div:last-of-type p {
+    flex-wrap: wrap;
+  }
+
+  footer > p:last-child {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  nav {
+    gap: 8px;
+  }
+
+  nav > a:first-child {
+    font-size: 16px;
+  }
+
+  nav > a:first-child img {
+    width: 30px;
+  }
+
+  nav > a:last-child {
+    padding: 8px;
+    font-size: 11px;
+  }
+
+  nav > div {
+    gap: 9px 13px;
+  }
+
+  nav > div a {
+    font-size: 12px;
+  }
+
+  main > section:first-child {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #home h1 {
+    font-size: 2.1rem;
+  }
+
+  #home > a {
+    display: block;
+    width: fit-content;
+  }
+
+  #courses > article > img {
+    height: 185px;
+  }
+
+  footer > div:not(:first-child):not(:last-of-type) {
+    width: 100%;
+  }
+}
